@@ -17,7 +17,7 @@ The early data analysis was all meant to understand the possible targets for the
 The next step was to understand from the data how I could value the outcome of these possessions. The shooting categories were pretty straightforward as they always end up in a shot. Effective field goal percentage (EFG%) is the expected points earned from a shot divided by the number of shots and then divided by two to make it comparable to field goal percentage. By multiplying it by two we have the expected value of a pull-up shot or catch-and-shoot shot. Drives and post-ups were harder since only some of the times they end a possession and scoring, turnovers, and assists are all methods to ending the possession.
 
 To calculate them, I needed to value shots, assists, and turnovers. I used points percentage to value shots which includes free throws as well as field goals. For assists, some creativity was required. There are no available stats on the number of passes a player makes from post-ups or drives that turn into shots and the value of those shots that do go in. I used the league average points per assisted shot for each year and a player's assist to potential assist ratio to determine the value of an assist. Turnovers are a little more simple. I used league average points off turnovers for each year to value them. The formulas are below.  
-<img src="./images/EV_AST.png" alt="Expected Value Assist Formula" title="Expected Value Assist Formula" height="100" />
+<img src="./images/EV_AST.png" alt="Expected Value Assist Formula" title="Expected Value Assist Formula" height="100" />  
 <img src="./images/EV_TO.png" alt="Expected Value Turnover Formula" title="Expected Value Turnover Formula" height="75" />
 
 
