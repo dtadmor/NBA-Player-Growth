@@ -3,10 +3,10 @@
 
 Every NBA team, fan, and analyst wants to know how well a players will play together. Since the answer to the question is only actionable when looking forward, the first step is to understand how well a player will do in the future. Player performance is too often boiled down to a single number (RPM, BPM, PER, etc.) and this would not provide a step towards understanding how well players would play as teammates nor does it recognize the complex reality of player performance. In this project, I look to predict player performance and tendencies in different aspects of the game.  
 
-Carefully choosing these aspects was the first step in creating useful predictions. Looking through the vasts amount of data provided by the [NBA's website](www.NBA.com/stats), I determined four categories to use: catch-and-shoot plays, pull-ups, drives, and post-ups. By including assist, turnover, and shooting data, I calculated the expected value, in points, and rate, in possessions used per minute, for each player over the last 5 seasons (what was available).  
+Carefully choosing these aspects was the first step in creating useful predictions. Looking through the vasts amount of data provided by the [NBA's website](https://www.NBA.com/stats), I determined four categories to use: catch-and-shoot plays, pull-ups, drives, and post-ups. By including assist, turnover, and shooting data, I calculated the expected value, in points, and rate, in possessions used per minute, for each player over the last 5 seasons (what was available).  
 
 ## Data Collection
-Data collection occurred throughout this project as I recognized the need for more and more statistics. Most statistics were taken from individual player data from the [NBA's website](www.NBA.com/stats) and some data required to calculate expected values of assists each year was taken from [Basketball-Reference](www.basketball-reference.com).  
+Data collection occurred throughout this project as I recognized the need for more and more statistics. Most statistics were taken from individual player data from the [NBA's website](https://www.NBA.com/stats) and some data required to calculate expected values of assists each year was taken from [Basketball-Reference](https://www.basketball-reference.com).  
 
 I have stored all of the data in the [data folder](./data) in this repository. You can also look through the [scraping notebook](./Data%20Gathering.ipynb) to see what data sets I acquired them and how I did so.  
 
