@@ -48,7 +48,7 @@ For drives, methods of scoring were correlated including pull-ups which is anoth
 
 ## Modeling
 #### Expected Value
-Using the features determined in the EDA, I applied a linear regression for maximum interpretability. The R2 score was .2 on the validation set and .1 on the test set. Below is a graph showing the most important features and their coefficients.
+Using the features determined in the EDA, I applied regularized regression methods. This created easy interpretation. The R2 score depended on the category, but ranged between .15 to .78. The predictions were all compared to a baseline of the past season stats as an estimation of the next season. The model's improved the baseline from between 4 and 27%. Below is a graph showing the most important features and their coefficients.
 
 ![Graph with Post-Up Coefficients](./images/post_up_coefficients.png)
 
