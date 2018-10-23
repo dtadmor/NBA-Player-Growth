@@ -14,7 +14,7 @@ I have stored all of the data in the [data folder](./data) in this repository. Y
 #### Determining Target Features
 The early data analysis was all meant to understand the possible targets for the model. There were 8 possible categories that I looked into: paint touches, elbow touches, post-ups, drives, catch-and-shoot plays, and pull-ups. Unfortunately, there was some overlap among these categories, and this project was to understand the different dimensions of a player. Having overlapping categories would potentially lead to overrating and/or underrating certain players. So, I went with as many categories as I could that were clearly not overlapping: post-ups, drives, catch-and-shoot plays, and pull-ups.
 
-The next step was to understand from the data how I could value the outcome of these possessions. The shooting categories were pretty straightforward as they always end up in a shot. Effective field goal percentage (EFG%) is the expected points earned from a shot divided by the number of shots and then divided by two to make it comparable to field goal percentage. By multiplying it by two we have the expected value of a pull-up shot or catch-and-shoot shot. Drives and post-ups were harder since only some of the times they end a possession and scoring, turnovers, and assists are all methods to ending the possession.
+The next step was to determine how to value the outcome of these possessions. The shooting categories were pretty straightforward as shots always end up in a shot. Effective field goal percentage (EFG%) is the expected points earned from a shot divided by the number of shots and then divided by two to make it comparable to field goal percentage. By multiplying it by two we have the expected value of a pull-up shot or catch-and-shoot shot. Drives and post-ups were harder since only some of the times they end a possession and scoring, turnovers, and assists are all methods to ending the possession.
 
 To calculate them, I needed to value shots, assists, and turnovers. I used points percentage to value shots which includes free throws as well as field goals. For assists, some creativity was required. There are no available stats on the number of passes a player makes from post-ups or drives that turn into shots and the value of those shots that do go in. I used the league average points per assisted shot for each year and a player's assist to potential assist ratio to determine the value of an assist. Turnovers are a little more simple. I used league average points off turnovers for each year to value them. The formulas are below.  
 <img src="./images/EV_AST.png" alt="Expected Value Assist Formula" title="Expected Value Assist Formula" height="100" />  
@@ -31,17 +31,28 @@ All expected value categories were correlated with better offensive ratings and 
 
 Another important observation is that post-up expected value was the only category to have a negative correlation with DRTG (which is good). This could be because posting-up is related to other information like height which might influence rebounding and defense.
 
-#### Post-Up Expected Value
 
-Post-ups provided the challenge that most players rarely or never do it. It was important to establish a cut-off to limit the noise in the data, but this needed to be balanced with creating too small of a sample size. Using a cutoff of 50 post-ups a year, I found the 10 most correlated features with future expected value from post-ups. Below you can see the relationships. It should be noted that these categories are all related to how well a player scores near the hoop, passes, and avoids turnovers, but none are the actual expected value of post-ups from the current year.
+#### Expected Values
+
+Post-ups provided the greatest challenge since most players rarely or never do it. Still, the number of usable and meaningful observations were small for all categories. It was important to establish a cut-off to limit the noise in the data, but this needed to be balanced with creating too small of a sample size. Using a cutoff of 50 plays a year, I found the most correlated features with each category.
+
+For post-ups, you can see that the most correlated categories are all related to how well a player shoots, passes, and avoids turnovers.
 
 ![Graphs of Features Correlated to Post-Up Effective Value](./images/post_touch_correlations.png)
 
+For drives, methods of scoring were correlated including pull-ups which is another method of scoring off the dribble.
+
+![Graphs of Features Correlated to Post-Up Effective Value](./images/drive_ev_correlations.png)
+
+#### Rates
+
 ## Modeling
-#### Post-Up Expected Value
+#### Expected Value
 Using the features determined in the EDA, I applied a linear regression for maximum interpretability. The R2 score was .2 on the validation set and .1 on the test set. Below is a graph showing the most important features and their coefficients.
 
 ![Graph with Post-Up Coefficients](./images/post_up_coefficients.png)
+
+#### Rates
 
 ## Next Steps
 Incorporating team data, to looking at how players work together.
