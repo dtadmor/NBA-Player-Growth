@@ -12,4 +12,4 @@ For each target, multiple models were tested and optimized. In the end, linear r
 
 The models determining rates were able to explain around 70% of the target variance, while models determining expected value were able to explain around 15% of the target variance. When the model were compared to baseline predictions, the expected value models had the greater value by improving on the baselines by 14 - 26%. 
 
-In the future, these predictions could be used to determine optimal lineups, player signings, and areas for players to improve. Still, to better understand the model, it would help to understand how much of the variance of year to year performance is due to random chance. Also, it is important to make predictions for defense to create a more complete picture.
+In the future, these predictions could be used to determine optimal lineups, player signings, and areas for players to improve. Before doing so, I would determine how much of the variance of year to year performance is due to random chance. Also, it is important to make predictions for defense to create a more complete picture.
