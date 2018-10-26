@@ -1,6 +1,6 @@
 # PredictingNBAPlayerGrowth
 
-Every NBA team, fan, and analyst wants to know how well a players will play together. The first step is to understand how well a player will do in the future. Recognizing the complexities of player performance, this project aims to predict player performance and tendencies in key aspects of the game.
+Every NBA team, fan, and analyst wants to know how well players will play together. The first step is to understand how well a player will do in the future. Recognizing the complexities of player performance, this project aims to predict player performance and tendencies in key aspects of the game.
 
 I began the project with data collection, and continued it time there was a need for more statistics. Hundreds of statistics of individual player data was taken from the NBA’s website and some data required to evaluate different plays was taken from Basketball-Reference.
 
