@@ -1,6 +1,6 @@
 # PredictingNBAPlayerGrowth
 
-Every NBA team, fan, and analyst wants to know how well players will play together. The first step is to understand how well a player will do in the future. Recognizing the complexities of player performance, this project aims to predict player performance and tendencies in key aspects of the game.
+Every NBA team, fan, and analyst wants to know how well players will play together. The first step is to understand how well a player will do in the future. Recognizing the complexities of player performance, this project aims to predict player tendencies and expectations in key aspects of the game.
 
 After defining the project goal, I collected hundreds of statistics of individual player data from the NBA’s website and some additional data from Basketball Reference required to evaluate different outcomes of plays.
 
@@ -12,4 +12,4 @@ Then, multiple models were tested and optimized. In the end, linear regression o
 
 The models determining rates were able to explain around 70% of the target variance, while models determining expected value were able to explain around 15% of the target variance. When the model were compared to baseline predictions, the expected value models had the greater value by improving on the baselines by 14 - 26%. 
 
-In the future, these predictions could be used to determine optimal lineups, player signings, and areas for players to improve. Still, to better understand the model, it would help to understand how much of the variance of year to year performance is due to random chance. Also, it is important to make predictions for defense to create a more complete picture.
+In the future, these predictions could be used to determine optimal lineups, player signings, and areas for players to improve. Still, to better understand the model, it would help to estimate the variance of year to year performance due to random chance. Also, it will be important to make predictions for defense to create a more complete picture.
