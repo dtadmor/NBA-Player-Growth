@@ -209,3 +209,103 @@ columns_dict = {
     'bios': ['SEASON', 'PLAYER_ID', 'PLAYER_NAME', 'PLAYER_HEIGHT_INCHES', 'PLAYER_WEIGHT'],
     'traditional': ['SEASON', 'PLAYER_ID', 'PLAYER_NAME', 'FTM', 'FTA', 'FT_PCT']
 }
+
+color_dict = {
+    'primary': {
+        'ATL': (225,68,52),
+        'BKN': (0,0,0),
+        'BOS': (0,122,51),
+        'CHA': (29,17,96),
+        'CHI': (206,17,65),
+        'CLE': (111,38,61),
+        'DAL': (0,83,188),
+        'DEN': (13,34,64),
+        'DET': (200,16,46),
+        'GSW': (0,107,182),
+        'HOU': (206,17,65),
+        'IND': (0,45,98),
+        'LAC': (200,16,46),
+        'LAL': (85,37,130),
+        'MEM': (93,118,169),
+        'MIA': (152,0,46),
+        'MIL': (0,71,27),
+        'MIN': (12,35,64),
+        'NOP': (0,22,65),
+        'NYK': (0,107,182),
+        'OKC': (0,125,195),
+        'ORL': (0,125,197),
+        'PHI': (0,107,182),
+        'PHX': (29,17,96),
+        'POR': (224,58,62),
+        'SAC': (91,43,130),
+        'SAS': (196,206,211),
+        'TOR': (206,17,65),
+        'UTA': (0,43,92),
+        'WAS': (0,43,92)
+    },
+    'secondary': {
+        'ATL': (196,214,0),
+        'BKN': (119,125,132),
+        'BOS': (139,111,78),
+        'CHA': (0,120,140),
+        'CHI': (6,25,34),
+        'CLE': (255,184,28),
+        'DAL': (0,43,92),
+        'DEN': (255,198,39),
+        'DET': (29,66,138),
+        'GSW': (253,185,39),
+        'HOU': (196,206,211),
+        'IND': (253,187,48),
+        'LAC': (29,66,148),
+        'LAL': (253,185,39),
+        'MEM': (18,23,63),
+        'MIA': (6,25,34),
+        'MIL': (240,235,210),
+        'MIN': (35,97,146),
+        'NOP': (225,58,62),
+        'NYK': (245,132,38),
+        'OKC': (239,59,36),
+        'ORL': (196,25,34),
+        'PHI': (237,23,76),
+        'PHX': (229,95,32),
+        'POR': (6,25,34),
+        'SAC': (99,113,122),
+        'SAS': (6,25,34),
+        'TOR': (6,25,34),
+        'UTA': (0,71,27),
+        'WAS': (227,24,55)
+    }
+}
+
+title_dict = {
+    'POST_TOUCH_RATE': 'Post-Up Rate',
+    'POST_TOUCH_EV': 'Post-Up Performance',
+    'DRIVE_RATE': 'Drive Rate',
+    'DRIVE_EV': 'Drive Performance',
+    'CATCH_SHOOT_RATE': 'Catch-and-Shoot Rate',
+    'CATCH_SHOOT_EV': 'Catch-and-Shoot Performance',
+    'PULL_UP_RATE': 'Pull-Up Rate',
+    'PULL_UP_EV': 'Pull-Up Performance'
+}
+
+skill_max = {
+    'POST_TOUCH_RATE': 0.4187755102040817,
+    'POST_TOUCH_EV': 1.3392919640435357,
+    'DRIVE_RATE': 0.4788888888888889,
+    'DRIVE_EV': 1.5,
+    'CATCH_SHOOT_RATE': 0.3692307692307692,
+    'CATCH_SHOOT_EV': 1.576,
+    'PULL_UP_RATE': 0.361271676300578,
+    'PULL_UP_EV': 1.308
+}
+
+skill_avg = {
+    'POST_TOUCH_RATE': 0.03978835715950378,
+    'POST_TOUCH_EV': 0.5362031339674892,
+    'DRIVE_RATE': 0.11624891464574634,
+    'DRIVE_EV': 0.8134376186193863,
+    'CATCH_SHOOT_RATE': 0.10991854980561748,
+    'CATCH_SHOOT_EV': 0.9698239331368969,
+    'PULL_UP_RATE': 0.08614674479312547,
+    'PULL_UP_EV': 0.7581084463963609
+}
