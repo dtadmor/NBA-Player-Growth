@@ -34,8 +34,8 @@ def data_split(X, y, category, test_size=.2, validate_size=.2):
     validate_size = validate_size/(1 - test_size)
 
     # Creating the train, validate, and test from X and y.
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size)
-    X_train, X_validate, y_train, y_validate = train_test_split(X_train, y_train, test_size=validate_size)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=42)
+    X_train, X_validate, y_train, y_validate = train_test_split(X_train, y_train, test_size=validate_size, random_state=42)
 
     return X_train, X_validate, X_test, y_train, y_validate, y_test
 
